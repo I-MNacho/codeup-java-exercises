@@ -27,7 +27,7 @@ public class SyntaxLecture {
                  Math.random();
 
 //         Object creation expressions
-                 SomeObject = new SomeObject();
+//                 SomeObject = new SomeObject();
 
         // ================== COMMENTS (s-4)
 
