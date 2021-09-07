@@ -76,12 +76,12 @@ public class ControlStatementAndLoops {
 
         //BONUS WORK
 //        write a short Java program that tests if a number is positive or negative. Define a few numeric variables and run them through a decision. If the number is positive, output that it is positive, and if it is negative, output that it is negative.
-        int x = 0;
-        if (x > 0){
-            System.out.println("This is a positive number.");
-        }else{
-            System.out.println("Idk bro, might be negative.");
-        }
+//        int x = 0;
+//        if (x > 0){
+//            System.out.println("This is a positive number.");
+//        }else{
+//            System.out.println("Idk bro, might be negative.");
+//        }
 
 
 
@@ -93,5 +93,75 @@ public class ControlStatementAndLoops {
 //        int y = 50;
 //
 //        if (y > )
+
+
+//
+//    int c = 0, d = 100, e = 50;
+//   if( c == 0 && e++ < 100 )
+//        {
+//        d = 150;
+//        }
+//        System.out.println("e = " + e );
+////none short circuit operator is just one "&" or one "|" for the OR
+//
+//   int number = 42;
+//   boolean exsistence = true;
+//
+//   if (exsistence || number++ == 42){
+//
+//   }
+//System.out.println(number);
+
+//no === operator , only ==
+// just one is = an assignment operator
+// inequality operator: !=
+
+
+
+
+
+//Write a Java Program that asks the user for their age and then tells them if they are a teenager or not.
+//BONUS: if not, tell them whether they are younger or older than a teenager.
+
+
+
+//        //LOOPS
+//
+//        int i = 1;      //<-- variable goes outside of loop, then test
+//        System.out.println("The loop hasn't started yet. The value of i is " + i);
+//        while (i < 10){     //<--testing the variable, and if true then run everything in code block
+//            System.out.println("Now I'm in the loop. i has not incremented yet and its value is " + i);
+//            i = i + 1;      //<-- modify loop control variable if not you can get a infinte loop
+//            System.out.println("I'm still in the loop. i has incremented now and its value is " + i);
+//        }
+//        System.out.println("This is out the far end of the loop. The conditional has tested false. The value of i is what it last incremented to. See? " + i);
+//
+//
+//
+//
+//
+//        //DO While Loop
+//        //code block will always run at least once
+//        int i = 1;
+//        System.out.println("The loop hasn't started yet. The value of i is " + i);
+//        do {
+//            System.out.println("Now I'm in the loop. i has not incremented yet and its value is " + i);
+//            i = i + 1;
+//            System.out.println("I'm still in the loop. i has incremented now and its value is " + i);
+//        } while (i<10);
+//        System.out.println("This is out the far end of the loop. The conditional has tested false. The value of i is what it last incremented to. See? " + i);
+
+        //Short hand, but cannot do anything after it evaluates
+//        int i;
+//        for(int i = 0; i < 10; i++){
+//            System.out.println("The loop hasn't started yet. The value of i is " + i);
+//        }
+//        System.out.println("I'm still in the loop. i has incremented now and its value is " + i);
+//        }
+
+
+
+
+
     }
 }
