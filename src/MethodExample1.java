@@ -21,7 +21,7 @@ public class MethodExample1 {
 
 
     public static void start(){
-        String userInput;       //<-- make sure the variable is defined outside of loop to be able to access it
+        String userInput;  //<-- make sure the variable is defined outside of loop to be able to access it
         do {
             userInput = getInput();
             printInputLengthMsg(userInput);
