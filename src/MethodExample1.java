@@ -11,7 +11,7 @@ public class MethodExample1 {
     }
 
     //measuring input length
-    public static void printInputLengthMsg(String input){   //<- input type and then "name it"
+    public static void printInputLengthMsg(String input){   //<- input type and then name it'
         if (input.length() > 5){
             System.out.println("That is a long input!");
         }else{
