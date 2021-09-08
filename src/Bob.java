@@ -2,26 +2,23 @@ import java.util.Scanner;
 public class Bob {
     public static void main(String [] args){
 
-
-
-
-
-
-
-
-
-
-
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("How are you feeling today?");
+        System.out.println("Ask Bob a question.");
         String userInput = scanner.nextLine();
-        if(userInput.equals("good")){
-            System.out.println("Well it is a gorgeous day in paradise :) ");
-        }else if(userInput.equals("bad")){
-            System.out.println("Sometimes even in paradise it has to rain.");
+
+        if(userInput.endsWith("?")){
+            System.out.println("Sure");
+        }else if(userInput.endsWith("!")){
+            System.out.println("Whoa, chill out bruh, its not that serious.");
+        }else if(userInput.equals("")){
+            System.out.println("Fine. Be that way!");
+        }else if(userInput.equals("dddd")){
+            System.out.println("Fine. Be that way!");
+        }else if(userInput.equals("asdf")){
+            System.out.println("Fine. Be that way!");
+        }else {
+            System.out.println("Whatever");
         }
-    }
-}
     }
 }
