@@ -3,46 +3,46 @@ public class MethodLecture {
     // ----------- DEFINING AND CALLING METHODS WITH VARIOUS INPUTS (examples)
 
     // no input or returned output
-    public static void sayGreeting() {
-        System.out.println("Hello");
-    }
-
-    // no returned output with input
-    public static void sayInput(String input) {
-        System.out.println(input);
-    }
-
-    // returned output without input
-    public static int returnSeven() {
-        return 7;
-    }
-
-    // return output given an input
-    public static int returnInt(int someInt) {
-        return someInt;
-    }
-
-    // return value based on multiple inputs
-    public static double returnProductOfThreeNums(double num1, double num2, double num3) {
-        return num1 * num2 * num3;
-    }
-
-    // return type different from input type
-    public static int returnLengthOfString(String input) {
-        return input.length();
-    }
-
-    // multiple input types
-    public static void printCharMultipleTimes(char c, int repetitions) {
-        System.out.println(String.valueOf(c).repeat(repetitions));
-    }
-
-    // calling other methods from a method
-    public static void printCharSevenTimes(char c) {
-        printCharMultipleTimes(c, returnSeven());
-    }
-
-     public static void main(String[] args) {
+//    public static void sayGreeting() {
+//        System.out.println("Hello");
+//    }
+//
+//    // no returned output with input
+//    public static void sayInput(String input) {
+//        System.out.println(input);
+//    }
+//
+//    // returned output without input
+//    public static int returnSeven() {
+//        return 7;
+//    }
+//
+//    // return output given an input
+//    public static int returnInt(int someInt) {
+//        return someInt;
+//    }
+//
+//    // return value based on multiple inputs
+//    public static double returnProductOfThreeNums(double num1, double num2, double num3) {
+//        return num1 * num2 * num3;
+//    }
+//
+//    // return type different from input type
+//    public static int returnLengthOfString(String input) {
+//        return input.length();
+//    }
+//
+//    // multiple input types
+//    public static void printCharMultipleTimes(char c, int repetitions) {
+//        System.out.println(String.valueOf(c).repeat(repetitions));
+//    }
+//
+//    // calling other methods from a method
+//    public static void printCharSevenTimes(char c) {
+//        printCharMultipleTimes(c, returnSeven());
+//    }
+//
+//     public static void main(String[] args) {
     // sayGreeting();
 
     // sayInput("Howdy");
@@ -71,13 +71,13 @@ public class MethodLecture {
 
     // ----------- OVERLOADING
 
-    /*
 
-        Method overloading is a way to define the same method with different method signatures.
-        It is a convenience to prevent the programmer from having to create many more method names
-        when defining functionality for various data type inputs.
 
-        Much of the Java language is defined using overloaded methods (e.g.
+//        Method overloading is a way to define the same method with different method signatures.
+//        It is a convenience to prevent the programmer from having to create many more method names
+//        when defining functionality for various data type inputs.
+//
+//        Much of the Java language is defined using overloaded methods (e.g.
 
         public static void main(String[] args) {
 
@@ -89,7 +89,19 @@ public class MethodLecture {
 
         }
 
-     */
+
+//changing data types of parameters , same method name, but redefine parameters
+         public static void print(String input){
+             System.out.println(input);
+         }
+
+         public static void print(int input){
+             System.out.println(input);
+         }
+         public static void print(short input){
+             System.out.println(input);
+         }
+
 
     public static void sayHello() {
         sayHello("Hello", "World");
@@ -119,12 +131,12 @@ public class MethodLecture {
         return x;
     }
 
-    // public static void main(String[] args) {
-    //     sayHello();
-    //     sayHello(2);
-    //     sayHello("John");
-    //     sayHello("Salutations", "Kevin");
-    // }
+     public static void main(String[] args) {
+         sayHello();
+         sayHello(2);
+         sayHello("John");
+         sayHello("Salutations", "Kevin");
+     }
 
 
     // ----------- RECURSION
