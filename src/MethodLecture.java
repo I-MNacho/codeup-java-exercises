@@ -1,3 +1,5 @@
+//import java.util.Locale;
+//
 //public class MethodLecture {
 //
 //    // ----------- DEFINING AND CALLING METHODS WITH VARIOUS INPUTS (examples)
@@ -42,7 +44,7 @@
 //        printCharMultipleTimes(c, returnSeven());
 //    }
 //
-//     public static void main(String[] args) {
+//    // public static void main(String[] args) {
 //    // sayGreeting();
 //
 //    // sayInput("Howdy");
@@ -69,35 +71,60 @@
 //
 //    // }
 //
+//
+//
+//
+//
+//
+//
+//
+//
 //    // ----------- OVERLOADING
 //
 //    /*
-//
-//        Method overloading is a way to define the same method with different method signatures.
+//        Method overloading is a way to define the same method with different method signatures (parameters).
 //        It is a convenience to prevent the programmer from having to create many more method names
 //        when defining functionality for various data type inputs.
-//
 //        Much of the Java language is defined using overloaded methods (e.g.
-//
 //        public static void main(String[] args) {
-//
 //            int firstValue = Integer.valueOf("0011", 2);
 //            System.out.println(firstValue);
-//
 //            int secondValue = Integer.valueOf("0011");
 //            System.out.println(secondValue);
-//
 //        }
-//
 //     */
 //
-//         public static void print(String input){
-//             System.out.println(input);
-//         }
 //
-//         public static void print(String input){
-//             System.out.println(input);
-//         }
+//
+//    //
+//    // public static void print(String input) {
+//    //     System.out.println(input);
+//    // }
+//    //
+//    // public static void print(int input) {
+//    //     System.out.println(input);
+//    // }
+//    //
+//    // public static void print(short input) {
+//    //     System.out.println(input);
+//    // }
+//    //
+//    // public static void print(byte input) {
+//    //     System.out.println(input);
+//    // }
+//    //
+//
+//    // public static void main(String[] args) {
+//    //
+//    //     int firstValue = Integer.valueOf("0011", 2);
+//    //     System.out.println(firstValue);
+//    //
+//    //     int secondValue = Integer.valueOf("0011");
+//    //     System.out.println(secondValue);
+//    //
+//    // }
+//
+//
 //
 //
 //
@@ -129,6 +156,8 @@
 //        return x;
 //    }
 //
+//
+//
 //    // public static void main(String[] args) {
 //    //     sayHello();
 //    //     sayHello(2);
@@ -137,30 +166,79 @@
 //    // }
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //    // ----------- RECURSION
 //
 //    /*
-//
 //        BASICS
-//
 //        Recursion is a process where a method calls itself repeatedly.
-//
 //        A method that calls itself is referred to as a "recursive" method.
-//
 //        A recursive method must have a condition that will end the recursive calls, called a "base case."
-//
 //        Without a base case, a recursive method will run out of memory and throw a StackOverflow exception.
-//
 //        USE CASES
-//
 //        Recursion allows programmers to express certain algorithms in a simpler way. Recursive solutions can
 //        be less efficient and possibly throw an exception if there are too many recursive calls.
-//
 //     */
 //
+//
+//    public static void ohNo(int num){
+//        ++num;
+//        if (num == 1000){
+////            return;     //<-- a return without defining it just stops the code
+//        System.out.println("oh no");
+//        ohNo(num);
+//        }
+//    }
+//
+//    public static void main(String[] args){
+//        ohNo(1);
+//    }
+//
+////the below allowed to take a letter off of codeup until p is left... the recurrison allowed it to keep going
+//    public static void eatString(String str) {
+//        if (str.length() != 0) {
+//            System.out.println("Taking a bite out of " + str);
+//            eatString(str.substring(1));
+//        }
+//    }
+//
+//     public static void main(String[] args) {
+//         // eatString("codeup");
+//     }
+//
+//
+//    // Change all letter o's in a string to zeros
+//    public static String oToZero(String input) {
+//        input = input.toLowerCase();        //<-- not worry about case
+//        int indexOfNextO = input.indexOf('o');
+//        if (indexOfNextO == -1) return input;   //<-- base case if current index is -1, there are no more o's to return and can return final version of string
+//        input = input.replace('o', '0');    //<-- one fewer o replaced by 0.
+//        return oToZero(input);
+//    }
+//
+//     public static void main(String[] args) {
+//          System.out.println(oToZero("hello"));
+//          System.out.println(oToZero("loops"));
+//          System.out.println(oToZero("wowowowowow"));
+//     }
+//
 //    public static long powersOfTen(int n) {
-//        if (n == 0) return 1;
-//        if (n == 1) return 10;
+//        if (n == 0) return 1; //base case
+//        if (n == 1) return 10; // base case
 //        return powersOfTen(n-1) * 10;
 //    }
 //
@@ -169,17 +247,28 @@
 //            System.out.println(i);
 //        }
 //    }
-//
+////psvm will equal bottom
+////    public static void main(String[] args) {
+////
+////    }
 //    // TODO: use recursion to print out a given number up through 100
-//    // public static int countTo100(int num) {
-//    // }
+//     public static void countTo100(int num) {
 //
+//
+//         System.out.println(num);   //<-- get current value
+//         ++num;                     //<-- increment
+//         if (num == 100){           //<-- base case can use >100 or ==101
+//             return;                //<-- stop
+//         }
+//         countTo100(num);           //<-- recursion to keep calling method
+//    }
 //
 //    // TODO: use recursion to add all numbers up from 1 to a given number
-//    // public static int addNums(int num) {
-//    // }
+//     public static int addNums(int num) {
 //
-//    // TODO: use recursion to ensure only the string "hello" is returned from the function
+//     }
+//
+//    // TODO: use recursion to ensure only the user input of "hello" is returned from the function
 //    // public static String getHello() {
 //    // }
 //
@@ -190,6 +279,17 @@
 //    //     countTo100Loop(4);
 //    //
 //    // }
+//
+//    public static boolean isPalindrome(String str) {
+//        if (str.length() == 0 || str.length() == 1) {
+//            return true;
+//        }
+//        if (str.charAt(0) == str.charAt(str.length() - 1)) {
+//            return isPalindrome(str.substring(1, str.length() - 1));
+//        } else {
+//            return false;
+//        }
+//    }
 //
 //
 //}
