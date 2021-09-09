@@ -71,15 +71,6 @@ public class MethodWarmup {
 
 
 
-//EXAMPLE OF RECURSION:
-
-//    public static long powersOfTen(int n) {
-//        if (n == 0) return 1; //base case
-//        if (n == 1) return 10; // base case
-//        return powersOfTen(n-1) * 10;
-//    }
-
-
 // TODO: use recursion to add all numbers up, from 1 to the given number input
     /*
         addNums(5) would trigger a calculation of...
@@ -90,7 +81,7 @@ public class MethodWarmup {
         System.out.println(addNums(5));
     }
      public static int addNums(int num) {
-        if (num == 0) return 0;
+        if (num == 1) return 1;             //i used 0 and with addition that works but with that it could cause issues when trying to multiply
         return addNums(num - 1) + num;
 
      }

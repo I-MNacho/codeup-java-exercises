@@ -1,7 +1,9 @@
-//import java.util.Locale;
+import java.util.Locale;
+import java.util.Scanner;
+
 //
-//public class MethodLecture {
-//
+public class MethodLecture {
+    //
 //    // ----------- DEFINING AND CALLING METHODS WITH VARIOUS INPUTS (examples)
 //
 //    // no input or returned output
@@ -269,8 +271,22 @@
 //     }
 //
 //    // TODO: use recursion to ensure only the user input of "hello" is returned from the function
-//    // public static String getHello() {
-//    // }
+    public static String getHello() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the word 'hello'");
+        String userResponse = sc.nextLine();
+        if (userResponse.equalsIgnoreCase("hello")) {
+            return userResponse;
+        } else {
+            return getHello();
+        }
+    }
+
+    public static void main(String[] args) {
+        String greeting = getHello();
+        System.out.println("you say " + greeting + "; I say howdy");
+    }
+}
 //
 //    // public static void main(String[] args) {
 //    //     System.out.println(powersOfTen(1));
