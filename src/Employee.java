@@ -11,7 +11,7 @@ public class Employee {
     }
 
     public void quoteTheEmployee(){
-        System.out.println(name + " says " + randomQuote.screamHeard());
+        System.out.println(name + " says hello");
     }
 
 
