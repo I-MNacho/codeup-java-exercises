@@ -15,7 +15,7 @@ public class MethodsExercises {
 //                getInteger(1, 10);
 //----------------------------------------------------------------------------------------------------------------------
 //Problem 3.
-                    Factorials(1, 10);
+//                    Factorials(1, 10);
             }
 
 
@@ -63,26 +63,26 @@ public class MethodsExercises {
         }
         return userInput;
     }
+//
+//    public static int Factorials (int num1, int num2) {
+//        System.out.print("Enter a number between 1 and 10: ");
+//        Scanner sc = new Scanner(System.in);
+//        int userInput = sc.nextInt();
+//
 
-    public static int Factorials (int num1, int num2) {
-        System.out.print("Enter a number between 1 and 10: ");
-        Scanner sc = new Scanner(System.in);
-        int userInput = sc.nextInt();
-
-
-        if (num1 == 1) return 1;
-        return Factorials(num1 - 1) + num1;
-
-
+//        if (num1 == 1) return 1;
+//        return Factorials(num1 - 1) + num1;
 
 
-        if (userInput < num1 || userInput > num2) {
-            Factorials(1, 10);
-        }else{
-//            System.out.println("nah bro");
-        }
-        return userInput;
-    }
+
+
+//        if (userInput < num1 || userInput > num2) {
+//            Factorials(1, 10);
+//        }else{
+////            System.out.println("nah bro");
+//        }
+//        return userInput;
+//    }
 
 
 
