@@ -25,7 +25,7 @@ public class Shark {
 
     //----------------------------------------------------
 
-    public int eat;
+    private int eat;
 
     public void setEat(int eat) {
         this.eat = eat;
@@ -36,7 +36,7 @@ public class Shark {
     }
 
     //----------------------------------------------------
-    public int grannysEaten;
+    private int grannysEaten;
 
     public void setGrannysEaten(int grannysEaten) {
         this.grannysEaten = grannysEaten;
@@ -78,8 +78,6 @@ public void visitsYoGranny(){
             return "this shouldn't happen";
         }
     }
-
-
 
 
     public Shark(String name, String sound, int eat){
