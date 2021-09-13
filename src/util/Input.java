@@ -34,8 +34,15 @@ public class Input {
 
 //    int getInt();
 //    double getDouble(double min, double max)
-//    double getDouble()
 
+
+
+
+    public double getDouble(String s){
+        System.out.println("Enter a number:");
+        double userInput = scanner.nextDouble();
+        return userInput;
+    }
 
 
     //When an instance of this object is created, the scanner property should be set to a new instance of the Scanner class.
