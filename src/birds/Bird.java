@@ -22,8 +22,14 @@ public class Bird {
         System.out.println("Flap flap");
     }
 
+
+//overload the constructor
     public Bird(){
 
     }
 
+    public Bird(String name){
+        this.name = name;
+        System.out.println("A new bird has been created.");
+    }
 }

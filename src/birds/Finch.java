@@ -8,4 +8,9 @@ public class Finch extends Bird {
         System.out.println("Chirp chirp");
     }
 
+    public Finch(){
+        super();
+        System.out.println("A new finch has been created.");
+    }
+
 }

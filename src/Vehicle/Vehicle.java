@@ -6,7 +6,8 @@ package Vehicle;
 public class Vehicle {
 
     private String name;
-
+    
+//getters and setters of name
     public String getName() {
         return name;
     }
@@ -14,8 +15,25 @@ public class Vehicle {
     public void setName(String name) {
         this.name = name;
     }
-
+    
+//makes noise method creation 
     public void makeNoise(){
         System.out.println("Vroom vroom");
+    }
+
+    //empty constructor
+    public Vehicle(){
+
+    }
+
+    //constructor with parameter for name
+    public Vehicle(String name){
+        this.name = name;
+        System.out.println("A new car has been made.");
+    }
+
+
+    public void breakingDownNoise() {
+        System.out.println("errrreeekkkkk trugh trug");
     }
 }

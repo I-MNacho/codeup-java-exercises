@@ -20,7 +20,7 @@ public class Garage {
                 }
             }
             Vehicle notHere = new Vehicle();
-            notHere.setName(null);
+//            notHere.setName(null);
             return notHere;
         }
     }

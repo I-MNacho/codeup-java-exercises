@@ -6,9 +6,16 @@ public class Corvette extends Vehicle{
         System.out.println("Vrahhhmmm vrahhhmmm");
     }
 
-    public void breakingDownNoise(){
-        super.makeNoise();
-        System.out.println("errrreeekkkkk trugh trug");
+    //empty constructor
+    public Corvette(){
+    }
+
+//    public void breakingDownNoise(){
+//        System.out.println("errrreeekkkkk trugh trug");
+//    }
+
+    public void setName(String carName){
+        super.setName(carName);
     }
 
 }

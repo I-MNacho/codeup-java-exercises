@@ -7,4 +7,18 @@ public class Duck extends Bird {        //<-- added class with an extends keywor
     public void makeNoise(){
         System.out.println("Quack quack");
     }
+
+    public Duck(){
+        super("Duck");
+    }
+
+    public void setName(String duckName){
+        super.setName(duckName);
+    }
+
+    public Duck(String name){
+        super(name);
+//        this.setName(name);
+        System.out.println("A new duck has been created.");
+    }
 }
