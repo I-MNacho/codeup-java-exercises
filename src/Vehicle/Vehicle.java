@@ -5,7 +5,7 @@ package Vehicle;
 
 public class Vehicle {
 
-    private String name;
+    protected String name;
     
 //getters and setters of name
     public String getName() {
@@ -18,7 +18,7 @@ public class Vehicle {
     
 //makes noise method creation 
     public void makeNoise(){
-        System.out.println("Vroom vroom");
+        System.out.println(name + " goes Vroom vroom");
     }
 
     //empty constructor

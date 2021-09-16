@@ -25,24 +25,26 @@ public class BirdTest {
 //        mallard.makeNoise();
 //        mallard.move();
 //
-//        Finch goldfinch = new Finch();
-//        goldfinch.setName("goldfinch");
-//        System.out.println(goldfinch.getName() + " says:");
-//        goldfinch.makeNoise();
-//        goldfinch.move();
+        Finch goldfinch = new Finch();
+        goldfinch.setName("goldfinch");
+        System.out.println(goldfinch.getName() + " says:");
+        goldfinch.makeNoise();
+        goldfinch.move();
 //
 //
-//        Bird myBird = new Duck("Merganser");
-//        myBird.move();
-//        myBird.makeNoise();
+        Bird myBird = new Duck("Merganser");
+        myBird.move();
+        myBird.makeNoise();
 //
-//        Duck rubberDucky = new Duck();
-//        rubberDucky.setName("Cody");
-//        System.out.println(rubberDucky.getName());
+        Duck rubberDucky = new Duck();
+        rubberDucky.setName("Cody");
+        System.out.println(rubberDucky.getName());
 
 
         Penguin penguin = new Penguin();
-        penguin.argumentativePenguinScientist();
+        penguin.setName("King Penguin");
+        System.out.println(penguin.getName());
+//        penguin.argumentativePenguinScientist();
     }
 
 }

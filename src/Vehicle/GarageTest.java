@@ -18,6 +18,14 @@ public class GarageTest {
         helicopter.setName("helicopter");
         carsInTheGarage[3] = helicopter;
 
+//        Helicopter helicopter = new Helicopter();
+//        helicopter.setName("helicopter");
+//        carsInTheGarage[2] = helicopter;
+
+        Motorcycle ninja = new Motorcycle();
+        ninja.name = "Ninja";
+        carsInTheGarage[1] = ninja;
+
         Garage garage = new Garage();
         garage.vehicles = carsInTheGarage;
         garage.alarmCascade();
