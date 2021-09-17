@@ -12,14 +12,11 @@ public class ShapeTest {
         System.out.println("Perimeter: " + myShape.getPerimeter());
 
         //Square
-        Square square = new Square(3);
+        Measurable square = new Square(3);
         System.out.println("Area: " + square.getArea());
 
+
     }
-
-
-
-
 
 //    public static void main(String[] args) {
 //        Rectangle box1 = new Rectangle(5.00, 4.00);

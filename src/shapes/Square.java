@@ -3,8 +3,11 @@ package shapes;
 public class Square extends Quadrilateral implements Measurable {
 
     //constructor
-    public Square(int side){
+    public Square(double side){
         super(side, side);
+        //OR
+        //this.width = side;
+//        this.length = side;
     }
 
     @Override
@@ -15,6 +18,8 @@ public class Square extends Quadrilateral implements Measurable {
     @Override
     public double getArea() {
        return Math.pow(length, 2);
+       //or
+        //return length * length;
     }
 
     @Override

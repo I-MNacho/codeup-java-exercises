@@ -12,7 +12,7 @@ abstract class Quadrilateral extends Shape implements Measurable{
         this.width = width;
     }
     //empty constructor
-    public Quadrilateral(){}
+//    public Quadrilateral(){}
 
 
     //getters and setters
@@ -29,6 +29,10 @@ abstract class Quadrilateral extends Shape implements Measurable{
     //abstract length and width setters and getters
     abstract void setLength(double length);
     abstract void setWidth(double width);
+
+    //how Jusin did it
+//    public  void setLength;
+//    public void setWidth;
 
 
 

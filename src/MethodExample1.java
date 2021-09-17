@@ -33,32 +33,32 @@
 //
 //
 //    public static void main(String[] args) {
-//    start();        //<-- just call the method
-//--------------------------------------------------------------------------------------------------
-
-//        String userInput = getInput();      //<-- stores input from user
-//        System.out.println(userInput);      //<-- prints out input from user
-//--------------------------------------------------------------------------------------------------
-
-//how to ask a user to keep inputting until an input hits 5 characters
-//        String userInput;       //<-- make sure the variable is defined outside of loop to be able to access it
-//        do {
-//            userInput = getInput();
-//            printInputLengthMsg(userInput);
-//        } while (userInput.length() < 5);
-//        System.out.println("End of Program.");
-//    }
-//--------------------------------------------------------------------------------------------------
-
-        //can do it this way
-//        String userInput = getInput();
-//        printInputLengthMsg(userInput);
-
-
-        //OR do it this way
-//        printInputLengthMsg(getInput());    //<--the return value of getInput is passed into printInputLengthMsg
-//--------------------------------------------------------------------------------------------------
-
-
+////    start();        //<-- just call the method
+////--------------------------------------------------------------------------------------------------
+////
+////        String userInput = getInput();      //<-- stores input from user
+////        System.out.println(userInput);      //<-- prints out input from user
+////--------------------------------------------------------------------------------------------------
+////
+////how to ask a user to keep inputting until an input hits 5 characters
+////        String userInput;       //<-- make sure the variable is defined outside of loop to be able to access it
+////        do {
+////            userInput = getInput();
+////            printInputLengthMsg(userInput);
+////        } while (userInput.length() < 5);
+////        System.out.println("End of Program.");
+////    }
+////--------------------------------------------------------------------------------------------------
+////
+////        can do it this way
+////        String userInput = getInput();
+////        printInputLengthMsg(userInput);
+////
+////
+////        OR do it this way
+////        printInputLengthMsg(getInput());    //<--the return value of getInput is passed into printInputLengthMsg
+////--------------------------------------------------------------------------------------------------
+//
+//
 //    }
 //}
