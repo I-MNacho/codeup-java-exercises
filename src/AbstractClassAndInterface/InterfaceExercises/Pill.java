@@ -1,7 +1,14 @@
 package AbstractClassAndInterface.InterfaceExercises;
 
 
-public class Pill {
+public class Pill implements Consumable {
+
+
+    protected String name;
+
+    public Pill(String name){
+        this.name = name;
+    }
 
     private String medicationName;
     private String pharmacistInstructions;
@@ -9,15 +16,15 @@ public class Pill {
         // getters setters constructors...
 
     public void consume() {
-        System.out.println("Drink down with fluid");
+        System.out.println(name + " " +": Drink down with fluid");
     }
 
     public void checkIfExpired() {
-        System.out.println("Check expiration date on pill bottle");
+        System.out.println(name + " " + ": Check expiration date on pill bottle");
     }
 
     public void throwAway() {
-        System.out.println("Wash down sink...");
+        System.out.println(name + " " + ": Wash down sink...");
     }
 
 }
