@@ -27,7 +27,8 @@ public class Waiter extends Employee implements Transferable{
 //        System.out.println(waiter.doWork());
 
 
-        //can we create a employee of type Employee?  A:no
+        //can we create a employee of type Employee?
+        // A:no
 
         //can we create an employee of type waiter?
 //        Waiter w = new Employee();     no does not work
