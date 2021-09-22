@@ -12,6 +12,8 @@ public class MyMathMethodsTest {
         int[] myArray = {3, 4, 5};
         System.out.println(MyMathMethods.arraySum(myArray));
 
+        //you can test the array by creating the array in the sout...
+        System.out.println(MyMathMethods.arraySum(new int[] {3,4,5}));
     }
 }
 
