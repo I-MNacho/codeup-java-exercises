@@ -14,6 +14,10 @@ public class Input {
         String userInput = scanner.nextLine();              //<-- captures the input
         return userInput;                                   //<-- displays input
     }
+
+    public String getString(String prompt){
+       return scanner.nextLine();
+    }
 //------------------------------------------------------------------------------------------------------------------
 
     public boolean yesNo(){
@@ -28,12 +32,38 @@ public class Input {
 
 //------------------------------------------------------------------------------------------------------------------
 
-//    public int getInt(int min, int max){
-//
-//    }
+    public int getInt(String input){
+        int userInput = Integer.parseInt(getString("Enter a integer please: "));
+        return userInput;
+    }
 
-//    int getInt();
-//    double getDouble(double min, double max)
+
+    public int getInt(int min, int max){
+        System.out.println("Enter a number between " + max + " and " + min);
+        int input;
+//        input = scanner.nextInt();
+        try{
+            input = Integer.parseInt(getString());
+        }catch (Exception e){
+            e.printStackTrace();
+            System.out.println("Not a number!");
+            return getInt(min, max);
+        }
+        if(input <= min || input >= max){
+            return getInt(min, max);
+        }
+        return input;
+    }
+
+
+    public double getDouble(double min, double max){
+        System.out.println("Enter a number between " + max + " and " + min);
+        double input = scanner.nextInt();
+        if(input <= min || input >= max){
+            return getDouble(min, max);
+        }
+        return input;
+    }
 
 
 
