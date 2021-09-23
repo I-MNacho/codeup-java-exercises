@@ -81,11 +81,11 @@
 //
 //        // arrays may contain a list of custom reference types
 //
-////         Person p1 = new Person("Fred", 99);
-////         Person p2 = new Person("Sally", 45);
-////         Person p3 = new Person("Billy", 30);
+////         Review.Person p1 = new Review.Person("Fred", 99);
+////         Review.Person p2 = new Review.Person("Sally", 45);
+////         Review.Person p3 = new Review.Person("Billy", 30);
 ////
-////         Person[] people = new Person[3];
+////         Review.Person[] people = new Review.Person[3];
 //
 ////         people[0] = p1;
 ////         people[1] = p2;
@@ -97,14 +97,14 @@
 //
 ////         using an array initializer...
 //
-//         Person[] people = {
-//             new Person("Fred", 99),
-//             new Person("Sally", 45),
-//             new Person("Billy", 30)
+//         Review.Person[] people = {
+//             new Review.Person("Fred", 99),
+//             new Review.Person("Sally", 45),
+//             new Review.Person("Billy", 30)
 //         };
 //
 ////         using a method that take in an array as an argument
-//         Person.printOutAgesOfPeople(people);
+//         Review.Person.printOutAgesOfPeople(people);
 //
 //
 //        /* TODO: create a class called Product with two private properties of name and priceInCents.

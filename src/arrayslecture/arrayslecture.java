@@ -1,24 +1,24 @@
 //
 //package arrayslecture;
 //
-//public class Person {
+//public class Review.Person {
 //
 //    private String name;
 //    private int age;
 //
-//    public static void progressOneYear(Person[] people) {
-//        for (Person person : people) {
+//    public static void progressOneYear(Review.Person[] people) {
+//        for (Review.Person person : people) {
 //            person.setAge(person.getAge() + 1);
 //        }
 //    }
 //
-//    public static void printOutAgesOfPeople(Person[] people) {
-//        for (Person person : people) {
+//    public static void printOutAgesOfPeople(Review.Person[] people) {
+//        for (Review.Person person : people) {
 //            System.out.println(person.getAge());
 //        }
 //    }
 //
-//    public Person(String name, int age) {
+//    public Review.Person(String name, int age) {
 //        this.name = name;
 //        this.age = age;
 //    }
