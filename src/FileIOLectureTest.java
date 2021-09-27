@@ -11,7 +11,7 @@ import java.util.List;
 public class FileIOLectureTest {
     public static void main(String[] args) {
 //
-        Path path = Paths.get("src");   //<--takes in a string
+//        Path path = Paths.get("src");   //<--takes in a string
 //        System.out.println(path);       //<-- prints out "src", which is just the path
 //        System.out.println(path.toAbsolutePath());  //<-- prints out the actual path from Users down to src
 //
@@ -108,7 +108,7 @@ public class FileIOLectureTest {
         }catch (IOException ioe){
             ioe.printStackTrace();
         }
-        Iterator<String> listIterator = currentList.iterator();     //<--
+        Iterator<String> listIterator = currentList.iterator();
         while (listIterator.hasNext()){
             String item = listIterator.next();                      //<--next element in iteration and stored under item as a string
             if (item.equalsIgnoreCase("Claudius")){
