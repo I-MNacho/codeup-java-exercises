@@ -102,10 +102,10 @@ public class Review {
     //create new array
 String[] strs = new String[4];
     //define each index
-    strs[0] = "one";
-    strs[1] = "two";
-    strs[2] = "three";
-    strs[3] = "four";
+//    strs[0] = "one";
+//    strs[1] = "two";
+//    strs[2] = "three";
+//    strs[3] = "four";
 
 //    System.out.println(Arrays.toString(strs));
 

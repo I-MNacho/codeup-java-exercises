@@ -7,8 +7,7 @@
 //Write getters and setters for funny. The getter should be named isFunny
 
 
-
-public class Movie {
+public class Movie implements Entertains {
     //instance variables
     private String name;
     private String director;
@@ -45,7 +44,8 @@ public class Movie {
 
     }
 
-
-
-
+    @Override
+    public String audienceReaction() {
+        return "oooooooooh " + name + " was so awesome!";
+    }
 }
