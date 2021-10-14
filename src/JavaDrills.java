@@ -4,19 +4,29 @@
 public class JavaDrills {
 
 //    work in progress
-    public static String flipOuterCase(String input){
+    public static String flipOuterCase(String str){
+
+        char[] chars = str.toCharArray();
+
+        for(int i =0; i < chars.length; i++){
+            if(Character.isUpperCase(chars[i])){
+                chars[i] = Character.toLowerCase(chars[i]);
+            }else if(Character.isLowerCase(chars[i])){
+                chars[i] = Character.toUpperCase(chars[i]);
+            }
+            return new String(chars);
+        }
+    }
 
 
-
-
-
-
-
+    public static void main(String[] args) {
         System.out.println(flipOuterCase("cat"));//CaT
         System.out.println(flipOuterCase("CaT"));//cat
         System.out.println(flipOuterCase("caT"));//Cat
         System.out.println(flipOuterCase("cAt"));//CAT
     }
+
+
 
 
 
