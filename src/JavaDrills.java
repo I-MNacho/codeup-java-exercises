@@ -14,8 +14,8 @@ public class JavaDrills {
             }else if(Character.isLowerCase(chars[i])){
                 chars[i] = Character.toUpperCase(chars[i]);
             }
-            return new String(chars);
         }
+        return new String(chars);
     }
 
 
